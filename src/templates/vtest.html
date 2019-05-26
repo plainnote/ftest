@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<div id="app">
+    <h3>デリミタ変更</h3>
+    <p>vue   : [[msg]]</p>
+</div>
+
+
+<script>
+var app = new Vue({
+    el: "#app",
+    delimiters: ["[[", "]]"],
+    data: {
+        msg: "Hello Vue!"
+    }
+})
+</script>   
+{% endblock %}
+
+<!-- Ref: https://muunyblue.github.io/0b7acbba52fb92b2e9c818f7f56bac99.html -->
+<!-- Ref: http://tabilike.hatenablog.com/entry/2018/04/09/130209 -->
